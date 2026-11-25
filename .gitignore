@@ -1,0 +1,36 @@
+# Build artifacts
+build/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.dll
+*.so
+*.dylib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Coverage and test output
+.coverage
+coverage.xml
+*.cover
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
