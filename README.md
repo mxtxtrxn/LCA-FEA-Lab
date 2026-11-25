@@ -2,8 +2,8 @@
 
 Motor propio de elementos finitos no lineal, en C++17, para simulación biomecánica **sintética** del ligamento cruzado anterior (LCA). No es una herramienta clínica y no usa datos de pacientes: la geometría, la orientación de las fibras de colágeno, los ángulos de inserción y la pretensión se generan de forma procedural con semillas fijas.
 
-Estado actual: documentación inicial. **Todavía no hay código implementado** y el proyecto sigue pendiente de su propia aprobación.
--
+Estado actual: documentación inicial y dependencias vendorizadas. **Todavía no hay código del proyecto implementado** y el proyecto sigue pendiente de su propia aprobación.
+
 ## Objetivo
 
 Implementar desde cero la cinemática, las leyes constitutivas, la cuadratura, el ensamblaje y el solucionador no lineal necesarios para simular el LCA bajo un escenario tipo Lachman o cajón anterior. La meta de largo plazo es sustituir corridas repetidas de FEA por un modelo sustituto pequeño entrenado solo con datos sintéticos, midiendo latencia en CPU sin hacer promesas de uso clínico real.
@@ -35,7 +35,7 @@ Estas rutas son una guía de diseño; **aún no existen como archivos**.
 ## Stack previsto
 
 - C++17, CMake y CTest, compilado con gcc o clang en el escritorio Linux.
-- Eigen y doctest se vendorizarán bajo `external/` cuando se implemente el núcleo, para no depender de `apt-get` ni de internet.
+- Eigen 3.4.0 (MPL-2.0) y doctest 2.4.11 (MIT) ya están vendorizados bajo `external/`, para no depender de `apt-get` ni de internet.
 - Python 3 de la librería estándar para el servidor local del visor.
 - HTML, CSS y JavaScript plano en Chrome, sin CDN, frameworks ni base de datos.
 - NumPy y scikit-learn solo si ya están disponibles offline, para el modelo sustituto pequeño.

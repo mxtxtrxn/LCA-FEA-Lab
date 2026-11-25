@@ -22,10 +22,8 @@ SOFTWARE.
 
 --- Third-party notices ---
 
-No third-party code is vendored in this initial documentation-only commit.
+external/eigen/: Eigen 3.4.0, Mozilla Public License 2.0.
+See external/eigen/COPYING.MPL2 and external/eigen/COPYING.README.
 
-Planned vendored dependencies, to be added when the implementation starts:
-- Eigen 3.4.0, Mozilla Public License 2.0, under external/eigen/.
-- doctest 2.4.11, MIT License, under external/doctest/.
-
-Their license files and notices will be preserved when those directories are added.
+external/doctest/doctest.h: doctest 2.4.11, MIT License,
+Copyright (c) 2016-2023 Viktor Kirilov.
