@@ -3,13 +3,7 @@
 Motor propio de elementos finitos no lineal, en C++17, para simulación biomecánica **sintética** del ligamento cruzado anterior (LCA). No es una herramienta clínica y no usa datos de pacientes: la geometría, la orientación de las fibras de colágeno, los ángulos de inserción y la pretensión se generan de forma procedural con semillas fijas.
 
 Estado actual: documentación inicial. **Todavía no hay código implementado** y el proyecto sigue pendiente de su propia aprobación.
-
-## Ruta del proyecto
-
-- **Ruta local:** `C:\Users\28026\LCA-FEA-Lab`
-- **Repositorio remoto previsto:** `https://github.com/mxtxtrxn/LCA-FEA-Lab.git`
-- **Rama inicial:** `main`
-
+-
 ## Objetivo
 
 Implementar desde cero la cinemática, las leyes constitutivas, la cuadratura, el ensamblaje y el solucionador no lineal necesarios para simular el LCA bajo un escenario tipo Lachman o cajón anterior. La meta de largo plazo es sustituir corridas repetidas de FEA por un modelo sustituto pequeño entrenado solo con datos sintéticos, midiendo latencia en CPU sin hacer promesas de uso clínico real.
